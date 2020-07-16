@@ -7,8 +7,9 @@ input.onButtonPressed(Button.A, function () {
         x += -1
         led.unplot(x + 1, y)
     } else if (x == 0 && y == 0) {
-        x = 0
-        y = 0
+        x = 4
+        y = 4
+        led.unplot(0, 0)
     }
 })
 input.onButtonPressed(Button.B, function () {
@@ -20,7 +21,9 @@ input.onButtonPressed(Button.B, function () {
         x += 1
         led.unplot(x - 1, y)
     } else if (x == 4 && y == 4) {
-        y = 4
+        x = 0
+        y = 0
+        led.unplot(4, 4)
     }
 })
 let y = 0
